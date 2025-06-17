@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+            html, body{
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                background-image: radial-gradient(circle, rgb(23, 0, 128) 0%, rgba(0, 20, 132, 0.833) 75%, rgba(0, 104, 142, 0.833) 100%);
+                font-family: 'Outfit';
+                color: white;
+            }
+
+            p {
+                margin-top: 2px;
+                margin-bottom: 0px;
+            }
+
+            .heading {
+                font-size: 70px;
+                text-align: center;
+                color: rgb(182, 231, 255);
+                margin-top: 20px;
+                margin-bottom: 0px;
+                vertical-align: top;
+            }
+            
+            .heading::before {
+                content: "Mughil's Portfolio ✨"
+            }
+
+            .heading:hover {
+                color: azure;
+            }
+
+            .box{ 
+                display: block;
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: 20px;
+            }
+
+            .boxes {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .box-content {
+                width: 307px;
+                margin: 1%;
+                padding: 20px;
+                text-align: center;
+                border: 3px solid;
+                border-radius: 10px;              
+                border-color: white;
+                align-content: center;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+
+            .image {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 0px;
+            }
+
+            .popup {
+                display:none;
+                position:fixed;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                background-color: rgba(0,0,0,0.7);
+                z-index: 10;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup, a {
+                color: white;
+                text-decoration: none;
+            }
+            .popup:target {
+                display: flex;
+            }
+
+            .popup-content {
+                display: flex;
+                background: white;
+                color: black;
+                width: 75%;
+                max-width: 750px;
+                height: 75%;
+                border-radius: 15px;
+                padding: 20px;
+                overflow: auto;
+                text-align: center;
+                position: relative;
+                gap: 20px;            
+            }
+
+            .popup-images {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-self: center;
+                gap: 10px;
+            }
+
+            .popup-images img {
+                width: 100%;
+                max-width: 285px;
+                border-radius: 10px;
+                vertical-align: middle;
+                border: 3px solid black;
+            }
+            
+            .popup-text {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 20px;
+                background: rgba(0,0,0,0.3);
+                color: white;
+                padding: 5px 10px;
+                text-decoration: none;
+                border-radius: 5px;    
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = 'heading'></div>
+
+        <div class = 'box'>
+            <div>
+                I'm a 3rd year engineering student, studying B.Tech Information Technology.
+            </div>
+            <div class="boxes">
+                <div class="box-content first">
+                    <a href="#popup1">
+                        <img class="image" src="Pics/sem2-1.png">
+                        <p>Housing Management System</p>
+                    </a>
+                </div>
+
+                <div class = "box-content ">
+                    <a href="popup2">
+                        <img class="image" src="Pics/sem3.png"
+                        <p>Restaurant Order Management System</p>
+                    </a>
+                </div>
+
+                <div class="box-content ">
+                    <a href="popup3">
+                        <img class="image" src="Pics/sem4.png"
+                        <p>On-Duty Management System</p>
+                    </a>
+                </div>
+
+                <div class="box-content ">
+                    <a href="popup4">
+                        <img class="image" src="Pics/sem4_mpmc.jpg"
+                        <p>Interview Simulator</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="Pics/sem2-1.png">
+                    <img src="Pics/sem2-2.png">
+                    <img src="Pics/sem2-3.png">
+                </div>
+
+                <div class="popup-text">
+                    <h1>Housing Management System</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This system allows for the management of occupancy of a 
+                        housing community. It allows users to track and manage 
+                        occupancy of houses, and to track the monthly maintenance 
+                        charges. It has the option to log in as different types
+                        of users.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

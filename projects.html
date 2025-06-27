@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/index.css"> 
+    </head>
+
+    <body>
+        <nav class = 'navbar'>
+            <a href="index.html">Home</a>
+            <a href="projects.html" class = "active_page">Projects</a>
+        </nav>
+
+        <div class="boxes">
+            <div class="box-content first">
+                <a href="#" data-popup="popup1">
+                    <img class="image" src="pics/sem2-1.png">
+                    <p>Housing Management System &rarr;</p>
+                </a>
+            </div>
+
+            <div class = "box-content ">
+                <a href="#" data-popup="popup2">
+                    <img class="image" src="pics/sem3-1.png">
+                    <p>Restaurant Order Management System &rarr;</p>
+                </a>
+            </div>
+
+            <div class="box-content ">
+                <a href="#" data-popup="popup3">
+                    <img class="image" src="pics/sem4_adsa-1.png">
+                    <p>On-Duty Management System &rarr;</p>
+                </a>
+            </div>
+
+            <div class="box-content ">
+                <a href="#" data-popup="popup4">
+                    <img class="image" src="pics/sem4_mpmc-1.jpg">
+                    <p>3D Interview Simulator &rarr;</p>
+                </a>
+            </div>
+
+            <div class="box-content ">
+                <a href="#" data-popup="popup5">
+                    <img class="image" src="pics/sem4_nplab-1.jpg">
+                    <p>Network Tower Placement Simulator &rarr;</p>
+                </a>
+            </div>
+
+            <div class="box-content ">
+                <a href="#" data-popup="popup6">
+                    <img class="image" src="pics/zenith-1.png">
+                    <p>Personalised Study Planner &rarr;</p>
+                </a>
+            </div>
+        </div>
+
+        <div data-id="popup1" class="popup">
+            <div class="popup-content">
+                <a href="#boxes" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="pics/sem2-1.png">
+                    <img src="pics/sem2-2.png">
+                    <img src="pics/sem2-3.png">
+                </div>
+
+                <div class="popup-text">
+                    <h1>Housing Management System</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This system allows for the management of occupancy of a 
+                        housing community. It allows users to track and manage 
+                        occupancy of houses, and to track the monthly maintenance 
+                        charges. It has the option to log in as different types
+                        of users.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div data-id="popup2" class="popup">
+            <div class="popup-content">
+                <a href="#boxes" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="pics/sem3-1.png">
+                    <img src="pics/sem3-2.png">
+                    <img src="pics/sem3-3.png">
+                </div>
+
+                <div class="popup-text">
+                    <h1>Restaurant Order Management System</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This system uses SQL to store the menu and customer data
+                        allowing for waiters to add dishes to a customer's order,
+                        and to generate the bill for it automatically as well.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div data-id="popup3" class="popup">
+            <div class="popup-content">
+                <a href="#boxes" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="pics/sem4_adsa-1.png">
+                    <img src="pics/sem4_adsa-2.png">
+                    <img src="pics/sem4_adsa-3.png">
+                </div>
+
+                <div class="popup-text">
+                    <h1>On-Duty Management System</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This system allows for students to apply for On-Duty (OD)
+                        and for their respective mentors and class advisors
+                        to accept or reject their request. Depending on the 
+                        action taken, a corresponding mail is sent informing
+                        the student.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div data-id="popup4" class="popup">
+            <div class="popup-content">
+                <a href="#boxes" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="pics/sem4_mpmc-1.jpg">
+                    <img src="pics/sem4_mpmc-2.png">
+                    <img src="pics/sem4_mpmc-3.jpg">
+                </div>
+
+                <div class="popup-text">
+                    <h1>3D Interview Simulator</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This simulator uses Gemini API in the backend to 
+                        generate questions based on the user's experience
+                        and show these in a 3D environment. It uses voice
+                        input and text to speech to evaluate the responses
+                        and give an overall score to the user.                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div data-id="popup5" class="popup">
+            <div class="popup-content">
+                <a href="#boxes" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="pics/sem4_nplab-1.jpg">
+                    <img src="pics/sem4_nplab-2.jpg" style="max-height: none !important; height: 250px !important;">
+                    <img src="pics/sem4_nplab-3.jpg">
+                </div>
+
+                <div class="popup-text">
+                    <h1>Network Tower Placement Simulator</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This simulator lets users choose a location, and uses
+                        different factors to select the optimal location to 
+                        place towers to ensure maximum coverage. It also 
+                        generates reports consisting of details such as recommended
+                        tower height, cost of the tower, installation, etc.                      
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div data-id="popup6" class="popup">
+            <div class="popup-content">
+                <a href="#boxes" class="close-btn">Close</a>
+
+                <div class="popup-images">
+                    <img src="pics/zenith-1.png">
+                    <img src="pics/zenith-2.png" style="max-height: none !important;">
+                    <img src="pics/zenith-3.jpg">
+                </div>
+
+                <div class="popup-text">
+                    <h1>Personalised Study Planner</h1>
+                    <p style="font-size: 20px; text-align: left;">
+                        This allows users to input data about their syllabus and 
+                        their requirements, and generates a study plan for them to
+                        follow. It also has an integrated chatbot that lets them
+                        attach files and ask questions from the content present
+                        in it.                      
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.querySelectorAll('[data-popup]').forEach(trigger => {
+                trigger.addEventListener('click', e => {
+                    e.preventDefault();
+                    const popupId = trigger.getAttribute('data-popup');
+                    const popup = document.querySelector(`.popup[data-id="${popupId}"]`);
+                    popup.classList.add('show');
+                });
+            });
+
+            document.querySelectorAll('.close-btn').forEach(btn => {
+                btn.addEventListener('click', e => {
+                    e.preventDefault();
+                    const popup = btn.closest('.popup');
+                    popup.classList.remove('show');
+                })
+            })
+        </script>
+    </body>
+</html>

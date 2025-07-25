@@ -1,63 +1,116 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/index.css"> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mughilan Paul's Portfolio – Aspiring Developer and IT Student">
+    <title>Mughilan Paul | Portfolio</title>
 
-        <style>
-            .text_stuff, .cta {
-                display: block;
-                text-align: center;
-                margin: 40px auto 0 auto;
-                font-size: 20px;  
-                width: 100%;
-                max-width: 1000px;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+
+    <style>
+        .text_stuff, .cta {
+            display: block;
+            text-align: center;
+            margin: 40px auto 0 auto;
+            font-size: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .cta {
+            margin-top: 10px;
+            font-size: 25px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(80vh - 60px);
+            margin: auto 75px auto 75px;
+            text-align: center;
+        }
+
+        .box-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .links_:hover {
+            display: inline-block;
+            transform: scale(1.02);
+            text-decoration: underline;
+            transition: transform 0s ease, text-decoration 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                font-size: 24px;
+                word-spacing: 10px;
             }
 
-            .cta {
-                margin-top: 10px;
-                font-size: 25px;
+            .heading {
+                font-size: 40px;
             }
 
-            .home {
-                display: flex;
+            .subheading {
+                font-size: 20px;
+            }
+
+            .box-content {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            .popup-content {
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: calc(80vh - 60px);
-                margin: auto 75px auto 75px;
-                text-align: center;
+                width: 90%;
+                height: 90%;
             }
-        </style>
-    </head>
 
-    <body>
-        <nav class = 'navbar'>
-            <a href="index.html" class="active_page">Home</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-        <div class = 'home'>
-            <div class = 'heading'>
-                Hi, I'm Mughilan Paul ✨
-                <div class = 'subheading'> Pre-Final Year IT Student & Aspiring Developer </div>
-            </div>
-            
-            <div class = 'cta'>
-                <div>
-                    Links - 
-                    <a href="https://github.com/Mughil128/" target="_blank">Github</a>
-                    ||
-                    <a href="https://www.linkedin.com/in/mughil128/" target="_blank">LinkedIn</a>
-                    ||
-                    <a href="pics/Mughil - Resume.pdf" target="_blank">Resume</a>
-                </div>
-            </div>
+            .popup-images img {
+                max-width: 90%;
+                max-height: none;
+            }
+        }
+    </style>
+</head>
 
-            <div class="text_stuff">
-                 Python | SQL | HTML | CSS | JavaScript | Git 
+<body>
+    <nav class='navbar'>
+        <a href="index.html" class="active_page">Home</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <div class='home'>
+        <div class='heading'>
+            Hi, I'm Mughilan Paul ✨
+            <div class='subheading'>Pre-Final Year IT Student & Aspiring Developer</div>
+        </div>
+
+        <div class='cta'>
+            <div>
+                Links -
+                <a href="https://github.com/Mughil128/" target="_blank" class="links_">Github</a>
+                ||
+                <a href="https://www.linkedin.com/in/mughil128/" target="_blank" class="links_">LinkedIn</a>
+                ||
+                <a href="pics/Mughil - Resume.pdf" target="_blank" class="links_">Resume</a>
             </div>
         </div>
-    </body>
+
+        <div class="text_stuff">
+            Python | SQL | HTML | CSS | JavaScript | Git
+        </div>
+    </div>
+</body>
 </html>
